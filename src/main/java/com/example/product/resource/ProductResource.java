@@ -11,28 +11,54 @@ import org.jboss.logging.Logger;
 
 import java.util.List;
 
+/**
+ * The type Product resource.
+ */
 @Path("/products")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class ProductResource {
 
+    /**
+     * The Product service.
+     */
     @Inject
     ProductService productService;
 
+    /**
+     * The LOG.
+     */
     private static final Logger LOG = Logger.getLogger(ProductResource.class);
 
+    /**
+     * Create uni.
+     *
+     * @param product the product
+     * @return the uni
+     */
     @POST
     public Uni<Product> create(Product product) {
         LOG.infof("ProductResource :: create");
         return productService.create(product);
     }
 
+    /**
+     * Gets all.
+     *
+     * @return the all
+     */
     @GET
     public Uni<List<Product>> getAll() {
-        LOG.infof("ProductResource :: getAll ");
+        LOG.infof("ProductResource :: getAll");
         return productService.getAll();
     }
 
+    /**
+     * Gets by id.
+     *
+     * @param id the id
+     * @return the by id
+     */
     @GET
     @Path("/{id}")
     public Uni<Response> getById(@PathParam("id") Long id) {
@@ -40,6 +66,13 @@ public class ProductResource {
         return productService.getById(id);
     }
 
+    /**
+     * Update uni.
+     *
+     * @param id      the id
+     * @param product the product
+     * @return the uni
+     */
     @PUT
     @Path("/{id}")
     public Uni<Product> update(@PathParam("id") Long id, Product product) {
@@ -47,6 +80,12 @@ public class ProductResource {
         return productService.update(id, product);
     }
 
+    /**
+     * Delete uni.
+     *
+     * @param id the id
+     * @return the uni
+     */
     @DELETE
     @Path("/{id}")
     public Uni<Boolean> delete(@PathParam("id") Long id) {
@@ -54,6 +93,13 @@ public class ProductResource {
         return productService.deleteById(id);
     }
 
+    /**
+     * Check stock uni.
+     *
+     * @param id    the id
+     * @param count the count
+     * @return the uni
+     */
     @GET
     @Path("/{id}/stock")
     public Uni<Boolean> checkStock(@PathParam("id") Long id, @QueryParam("count") int count) {
@@ -61,6 +107,11 @@ public class ProductResource {
         return productService.checkStock(id, count);
     }
 
+    /**
+     * Gets all sorted by price.
+     *
+     * @return the all sorted by price
+     */
     @GET
     @Path("/sorted")
     public Uni<List<Product>> getAllSortedByPrice() {

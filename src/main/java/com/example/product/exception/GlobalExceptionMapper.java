@@ -6,11 +6,18 @@ import jakarta.ws.rs.ext.Provider;
 import org.jboss.logging.Logger;
 
 import java.util.Map;
+
+/**
+ * The type Global exception mapper.
+ */
 @Provider
 public class GlobalExceptionMapper implements ExceptionMapper {
 
     private static final Logger LOG = Logger.getLogger(GlobalExceptionMapper.class);
 
+    /**
+     * Method to return response for all type of exception.
+     */
     @Override
     public Response toResponse(Throwable exception) {
         if (exception instanceof NotFoundException) {
