@@ -1,0 +1,40 @@
+{
+  "info": {
+    "name": "Quarkus Product API",
+    "_postman_id": "12345678-1234-5678-1234-567812345678",
+    "description": "Postman collection for Quarkus Reactive Product API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Wireless Mouse\",\n  \"description\": \"A Bluetooth-enabled wireless mouse\",\n  \"price\": 25.99,\n  \"quantity\": 150\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/products",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "products"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

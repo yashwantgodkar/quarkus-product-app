@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.product.ProductResourceTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-05-14T04:00:30" hostname="WKWEJ479252562" time="6.351">
+  <properties/>
+  <testcase name="testCreateProduct()" classname="com.example.product.ProductResourceTest" time="3.497">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;415&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;415&gt;.
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.example.product.ProductResourceTest.testCreateProduct(ProductResourceTest.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.quarkus.test.junit.QuarkusTestExtension.runExtensionMethod(QuarkusTestExtension.java:1018)
+	at io.quarkus.test.junit.QuarkusTestExtension.interceptTestMethod(QuarkusTestExtension.java:832)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="testGetProducts()" classname="com.example.product.ProductResourceTest" time="2.848"/>
+  <system-out><![CDATA[2025-05-14 09:30:20,984 WARN  [io.qua.res.rea.ser.dep.QuarkusServerEndpointIndexer] (build-15) Quarkus detected the use of JSON in JAX-RS method 'com.example.product.resource.ProductResource#create' but no JSON extension has been added. Consider adding 'quarkus-rest-jackson' (recommended) or 'quarkus-rest-jsonb'.
+2025-05-14 09:30:21,071 WARN  [io.qua.res.rea.ser.dep.QuarkusServerEndpointIndexer] (build-15) Quarkus detected the use of JSON in JAX-RS method 'com.example.product.resource.ProductResource#checkStock' but no JSON extension has been added. Consider adding 'quarkus-rest-jackson' (recommended) or 'quarkus-rest-jsonb'.
+2025-05-14 09:30:21,077 WARN  [io.qua.res.rea.ser.dep.QuarkusServerEndpointIndexer] (build-15) Quarkus detected the use of JSON in JAX-RS method 'com.example.product.resource.ProductResource#getAll' but no JSON extension has been added. Consider adding 'quarkus-rest-jackson' (recommended) or 'quarkus-rest-jsonb'.
+2025-05-14 09:30:21,079 WARN  [io.qua.res.rea.ser.dep.QuarkusServerEndpointIndexer] (build-15) Quarkus detected the use of JSON in JAX-RS method 'com.example.product.resource.ProductResource#getAllSortedByPrice' but no JSON extension has been added. Consider adding 'quarkus-rest-jackson' (recommended) or 'quarkus-rest-jsonb'.
+2025-05-14 09:30:21,081 WARN  [io.qua.res.rea.ser.dep.QuarkusServerEndpointIndexer] (build-15) Quarkus detected the use of JSON in JAX-RS method 'com.example.product.resource.ProductResource#getById' but no JSON extension has been added. Consider adding 'quarkus-rest-jackson' (recommended) or 'quarkus-rest-jsonb'.
+2025-05-14 09:30:21,087 WARN  [io.qua.res.rea.ser.dep.QuarkusServerEndpointIndexer] (build-15) Quarkus detected the use of JSON in JAX-RS method 'com.example.product.resource.ProductResource#delete' but no JSON extension has been added. Consider adding 'quarkus-rest-jackson' (recommended) or 'quarkus-rest-jsonb'.
+2025-05-14 09:30:21,099 WARN  [io.qua.res.rea.ser.dep.QuarkusServerEndpointIndexer] (build-15) Quarkus detected the use of JSON in JAX-RS method 'com.example.product.resource.ProductResource#update' but no JSON extension has been added. Consider adding 'quarkus-rest-jackson' (recommended) or 'quarkus-rest-jsonb'.
+2025-05-14 09:30:26,786 INFO  [org.hib.rea.pro.imp.ReactiveIntegrator] (JPA Startup Thread) HR000001: Hibernate Reactive
+Hibernate: 
+    select
+        * 
+    from
+        information_schema.sequences
+Hibernate: 
+    select
+        table_catalog as table_cat ,
+        table_schema as table_schem ,
+        table_name as table_name ,
+        table_type as table_type ,
+        null as remarks 
+    from
+        information_schema.tables 
+    where
+        1 = 1 
+        and table_name like $1 
+        and table_type in ( $2, $3, $4, $5 ) 
+Hibernate: 
+    select
+        table_name as table_name,
+        column_name as column_name,
+        case 
+            when udt_name = 'bpchar' 
+                then 'CHAR' 
+            else udt_name 
+        end as type_name,
+        null as column_size,
+        null as decimal_digits,
+        is_nullable as is_nullable,
+        null as data_type 
+    from
+        information_schema.columns 
+    where
+        1 = 1 
+    order by
+        table_catalog,
+        table_schema,
+        table_name,
+        column_name,
+        ordinal_position
+2025-05-14 09:30:30,033 INFO  [io.quarkus] (Test worker) quarkus-product-app 1.0.0 on JVM (powered by Quarkus 3.10.0) started in 17.398s. Listening on: http://localhost:8081
+2025-05-14 09:30:30,034 INFO  [io.quarkus] (Test worker) Profile test activated. 
+2025-05-14 09:30:30,035 INFO  [io.quarkus] (Test worker) Installed features: [cdi, hibernate-orm, hibernate-reactive, hibernate-reactive-panache, jdbc-postgresql, reactive-pg-client, rest, smallrye-context-propagation, vertx]
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.description,
+        p1_0.name,
+        p1_0.price,
+        p1_0.quantity 
+    from
+        Product p1_0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
