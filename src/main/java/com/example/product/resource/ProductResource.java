@@ -29,7 +29,7 @@ public class ProductResource {
 
     @GET
     public Uni<List<Product>> getAll() {
-        LOG.infof("ProductResource :: getAll");
+        LOG.infof("ProductResource :: getAll ");
         return productService.getAll();
     }
 
