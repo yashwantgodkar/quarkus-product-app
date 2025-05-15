@@ -42,10 +42,17 @@ To run the unit tests from IntelliJ:
 - Run the application by running the quarkusDev gradle task (quarkus-product-app -> Tasks -> quarkus -> quarkusDev)
 
 ## 🚀 Endpoints
-> POST http://localhost:8080/products
-> GET http://localhost:8080/products
-> GET http://localhost:8080/products/651
-> PUT http://localhost:8080/products/651
-> DELETE http://localhost:8080/products/651
-> GET http://localhost:8080/products/101/stock?count=1000
-> GET http://localhost:8080/products/sorted
+POST http://localhost:8080/products
+
+GET http://localhost:8080/products
+
+GET http://localhost:8080/products/651
+
+PUT http://localhost:8080/products/651
+
+DELETE http://localhost:8080/products/651
+
+GET http://localhost:8080/products/101/stock?count=1000
+
+GET http://localhost:8080/products/sorted
+
