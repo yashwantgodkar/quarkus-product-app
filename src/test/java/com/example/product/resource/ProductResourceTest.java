@@ -1,7 +1,6 @@
 package com.example.product.resource;
 
 import com.example.product.entity.Product;
-import com.example.product.resource.ProductResource;
 import com.example.product.service.ProductService;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.mockito.InjectMock;
