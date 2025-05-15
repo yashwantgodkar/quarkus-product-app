@@ -80,24 +80,12 @@ public class ProductService {
                 });
     }
 
-    /**
-     * Check stock uni.
-     *
-     * @param id    the id
-     * @param count the count
-     * @return the uni
-     */
     @WithSession
     public Uni<Boolean> checkStock(Long id, int count) {
         return Product.<Product>findById(id)
                 .onItem().ifNotNull().transform(product -> product.quantity >= count);
     }
 
-    /**
-     * Gets all sorted by price.
-     *
-     * @return the all sorted by price
-     */
     @WithSession
     public Uni<List<Product>> getAllSortedByPrice() {
         return Product.list("ORDER BY price ASC");
