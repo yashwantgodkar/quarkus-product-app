@@ -40,3 +40,12 @@ To run the unit tests from IntelliJ:
 - Open the project in IntelliJ IDEA (Community or Ultimate Edition).
 - Make sure the Gradle tool window is visible (View -> Tool Windows -> Gradle).
 - Run the application by running the quarkusDev gradle task (quarkus-product-app -> Tasks -> quarkus -> quarkusDev)
+
+## 🚀 Endpoints
+> POST http://localhost:8080/products
+> GET http://localhost:8080/products
+> GET http://localhost:8080/products/651
+> PUT http://localhost:8080/products/651
+> DELETE http://localhost:8080/products/651
+> GET http://localhost:8080/products/101/stock?count=1000
+> GET http://localhost:8080/products/sorted
