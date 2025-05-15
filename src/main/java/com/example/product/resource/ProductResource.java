@@ -23,7 +23,7 @@ public class ProductResource {
      * The Product service.
      */
     @Inject
-    ProductService productService;
+    public ProductService productService;
 
     /**
      * The LOG.

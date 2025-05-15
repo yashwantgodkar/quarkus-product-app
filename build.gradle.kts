@@ -23,8 +23,12 @@ dependencies {
     implementation("io.smallrye.reactive:mutiny")
     implementation("io.quarkus:quarkus-resteasy-reactive-jackson")
 
+    testImplementation("io.quarkus:quarkus-test-hibernate-reactive-panache")
+    testImplementation("org.mockito:mockito-core")
+    testImplementation("io.quarkus:quarkus-junit5-mockito")
     testImplementation("io.quarkus:quarkus-junit5")
     testImplementation("io.rest-assured:rest-assured")
+
 }
 
 tasks.test {
